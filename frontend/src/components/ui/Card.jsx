@@ -1,0 +1,9 @@
+import React from 'react';
+
+export function Card({ children, className = '' }) {
+  return (
+    <section className={`ui-card ${className}`.trim()}>
+      {children}
+    </section>
+  );
+}
