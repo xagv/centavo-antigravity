@@ -32,4 +32,6 @@ flowchart TD
 
     Transactions -->|"Verifica límite"| Budgets
     Budgets -->|"Si hay sobregasto"| Notifications["🔔 notifications-service"]
+    Reports -->|"Consulta gastos del mes"| Transactions
+    Reports -->|"Consulta presupuestos"| Budgets
 ```
